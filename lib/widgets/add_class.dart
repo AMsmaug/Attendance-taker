@@ -231,7 +231,8 @@ class _AddClassState extends State<AddClass> {
 
   Future<void> addGrade(Grade newGrade) async {
     try {
-      String url = "http://localhost/mobile_project/grade_info/add_grade.php";
+      String url =
+          "https://attendeasy.000webhostapp.com/grade_info/add_grade.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({
@@ -260,7 +261,7 @@ class _AddClassState extends State<AddClass> {
   Future<void> deleteGrade(Grade gradeToDelete) async {
     try {
       String url =
-          "http://localhost/mobile_project/grade_info/delete_grade.php";
+          "https://attendeasy.000webhostapp.com/grade_info/delete_grade.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({
@@ -282,7 +283,8 @@ class _AddClassState extends State<AddClass> {
 
   Future<void> getContent() async {
     try {
-      String url = "http://localhost/mobile_project/grade_info/get_grades.php";
+      String url =
+          "https://attendeasy.000webhostapp.com/grade_info/get_grades.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({

@@ -286,7 +286,7 @@ class _ClassInfoState extends State<ClassInfo> {
   Future<void> addStudent(Student newStudent) async {
     try {
       String url =
-          "http://localhost/mobile_project/student_info/add_student.php";
+          "https://attendeasy.000webhostapp.com/student_info/add_student.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({
@@ -312,7 +312,7 @@ class _ClassInfoState extends State<ClassInfo> {
   Future<void> deleteStudent(Student studentToDelete) async {
     try {
       String url =
-          "http://localhost/mobile_project/student_info/delete_student.php";
+          "https://attendeasy.000webhostapp.com/student_info/delete_student.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({

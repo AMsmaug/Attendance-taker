@@ -138,7 +138,7 @@ class _SignUpState extends State<SignUp> {
   Future addAccount(BuildContext context) async {
     try {
       String url =
-          "http://localhost/mobile_project/authentication/add_account.php";
+          "https://attendeasy.000webhostapp.com/authentication/add_account.php";
       var res = await http.post(Uri.parse(url),
           body: jsonEncode({
             "name": _nameController.text,

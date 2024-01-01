@@ -153,7 +153,7 @@ class _AddAttendanceState extends State<AddAttendance> {
 
   Future<void> addAttendance(List<Student> students) async {
     try {
-      String url = "http://localhost/mobile_project/add_attendance.php";
+      String url = "https://attendeasy.000webhostapp.com/add_attendance.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({

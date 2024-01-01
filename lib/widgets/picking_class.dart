@@ -69,7 +69,8 @@ class _PickingClassState extends State<PickingClass> {
 
   Future<void> getContent() async {
     try {
-      String url = "http://localhost/mobile_project/grade_info/get_grades.php";
+      String url =
+          "https://attendeasy.000webhostapp.com/grade_info/get_grades.php";
       var res = await http.post(
         Uri.parse(url),
         body: jsonEncode({
